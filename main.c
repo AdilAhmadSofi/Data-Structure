@@ -8,10 +8,10 @@ int main()
 	printf("Enter Array Elements\n");
 	for(int i = 0; i < SIZE; i++)
 		scanf("%d", &arr[i]);
-    //mergesort(arr, SIZE);
+    mergesortArray(arr, SIZE);
     //insertion_sort(arr, SIZE);
     //selection_sort(arr, SIZE);
     //reverseArray(arr, SIZE);
-    bubbleSortArray(arr, SIZE);
+    //bubbleSortArray(arr, SIZE);
     printArray(arr, SIZE);
 }
