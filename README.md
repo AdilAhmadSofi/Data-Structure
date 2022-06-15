@@ -1,2 +1,3 @@
 # Data-Structure
-# This repository conatains some Data Structure programs
+**Some Basic Programs**
+> This repository conatains some Data Structure programs
