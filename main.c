@@ -1,17 +1,16 @@
 #include <stdio.h>   
-#include "myheader.h"
+#include "arrayheader.h"
 #define SIZE 5
 
 int main()
 {
 	int arr[SIZE];
-	printf("Enter Array Elements\n");
-	for(int i = 0; i < SIZE; i++)
-		scanf("%d", &arr[i]);
-    mergesortArray(arr, SIZE);
-    //insertion_sort(arr, SIZE);
-    //selection_sort(arr, SIZE);
-    //reverseArray(arr, SIZE);
-    //bubbleSortArray(arr, SIZE);
-    printArray(arr, SIZE);
+  printf("Enter Array Elements\n");
+  init_array(arr, SIZE);
+  printArray(arr, SIZE); 
+  printf("Sum of Array Elements is : %d \n", arraySum(arr, SIZE));
+  printf("Smallest Array Element is : %d \n", smallArrayElement(arr, SIZE));
+  int target = 5;
+  printf("Index if %d is : %d \n",target, findIndex(arr, SIZE, target));
+  return 0;
 }
